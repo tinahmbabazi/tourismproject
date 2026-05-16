@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Tourism Website</title>
+        <link rel="stylesheet" href="./css/styles.css">
+        <meta charset="UTF-8">
+        <meta name="author" content="christine">
+        <meta name="keywords" content="about,form,register button">
+    </head>
+    
+    <body class="home">
+        <h2 class="welcome"> Visit Western-Uganda </h2>
+        <header>
+            
+            <nav>
+                <ul>
+                <li><a href="index.html"> HOME </a></li>
+                <li><a href="places.html"> PLACE TO VISIT </a></li>
+                <li><a href="activities.html"> ACTIVITIES TO DO </a></li>
+                <li><a href="contact.html"> CONTACT US</a></li>
+                </ul>
+            </nav>
+
+            <div class="search"> 
+                <input class="srch" type="search" name="" placeholder="type to  text">
+                <a href="#"> <button class="btn"> Search</button></a>
+            </div>
+        </header>
+
+        <h1 class="section-title" id="about" onclick="changeColor()"> About us </h1>
+        <p class="about-text"> Tour your favorite destinations and have an amazing experience within Western-Uganda. 
+            You can navigate to start planning your next travel to exciting adventures.
+        </p>
+
+        <div class="register-layout">
+            <section id="register">
+
+                <h2 class="section-title">Register your travel</h2>
+                <div class="form-container">
+
+                    <form method="POST" action="">
+                        <fieldset>
+
+                        <label for="fname">Full Name</label>
+                        <input type="text" name="name" value="" autofocus required="required" placeholder="Enter your full name">
+                        <br><br>
+
+                    <label for="destination">Destination</label>
+                    <select id="destination" name="destination">
+                    <option value="Murchison">Murchison falls</option>
+                    <option value="Queen Elizabeth">Queen Elizabeth National park</option>
+                    <option value="Bunyonyi">Lake Bunyonyi</option>
+                    </select>
+                    <br><br>
+
+                    <label for="date"> Date of Travel</label>
+                    <input type="date" id="date" name="date" value="" required="required">
+                    <br><br>
+
+                    <label for="email">Email address:</label>
+                    <input type="email" id="em" name="email" value="" required="required"
+                     placeholder="Enter your Email address">
+                    <br><br>
+
+                    <button type="submit" class="btn">Register</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+            
+            <aside class="video-panel">
+                <div class="video">
+                    <video controls autoplay muted>
+                        <source src="images/falls.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </aside>
+        </div>
+
+        <footer>
+        <p>&copy;2026 Visit Western Uganda</p>
+        </footer>
+        
+    </body>
+    <script src="./js/script.js"></script>
+</html>
